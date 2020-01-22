@@ -15,17 +15,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         /*
-         TODO: 1. Initialize the GetStartedService
-               2. Initialize the GetStartedPresenter with the above Service
-               3. Initialize the GetStartedView with the above Presenter
+         TODO: 1. Initialize the DiscoverView Service
+               2. Initialize the DiscoverViewPresenter with the above Service
+               3. Initialize the DiscoverView with the above Presenter
          */
-        
-        let getStartedView = GetStartedView()
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = scene
-        window?.rootViewController = getStartedView
+        let navController = UINavigationController(rootViewController: TabBarController())
+        navController.navigationBar.prefersLargeTitles = true
+        window?.rootViewController = navController
         window?.makeKeyAndVisible()
+        AppearanceHelper.setupBasicAppearance()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

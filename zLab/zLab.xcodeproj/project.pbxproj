@@ -12,6 +12,10 @@
 		EFE0411523D63C5600D47555 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE0411423D63C5600D47555 /* Assets.xcassets */; };
 		EFE0411823D63C5600D47555 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE0411623D63C5600D47555 /* LaunchScreen.storyboard */; };
 		EFE0412023D63CC500D47555 /* GetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0411F23D63CC500D47555 /* GetStartedView.swift */; };
+		EFE0412823D7A10D00D47555 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0412723D7A10D00D47555 /* TabBarController.swift */; };
+		EFE0412A23D7A27400D47555 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0412923D7A27400D47555 /* DiscoverView.swift */; };
+		EFE0412E23D7A3DC00D47555 /* AppearanceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0412D23D7A3DC00D47555 /* AppearanceHelper.swift */; };
+		EFE0413323D8BBED00D47555 /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0413223D8BBED00D47555 /* DiscoverTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		EFE0411723D63C5600D47555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFE0411923D63C5600D47555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFE0411F23D63CC500D47555 /* GetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView.swift; sourceTree = "<group>"; };
+		EFE0412723D7A10D00D47555 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EFE0412923D7A27400D47555 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		EFE0412D23D7A3DC00D47555 /* AppearanceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceHelper.swift; sourceTree = "<group>"; };
+		EFE0413223D8BBED00D47555 /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 		EFE0410A23D63C4500D47555 /* zLab */ = {
 			isa = PBXGroup;
 			children = (
+				EFE0412C23D7A3BA00D47555 /* Helpers */,
 				EFE0412423D63CF900D47555 /* Models */,
 				EFE0412323D63CF100D47555 /* Services */,
 				EFE0412223D63CE700D47555 /* Presenters */,
@@ -71,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				EFE0411F23D63CC500D47555 /* GetStartedView.swift */,
+				EFE0412723D7A10D00D47555 /* TabBarController.swift */,
+				EFE0413123D8AFD800D47555 /* Discover */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,6 +105,23 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EFE0412C23D7A3BA00D47555 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EFE0412D23D7A3DC00D47555 /* AppearanceHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EFE0413123D8AFD800D47555 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				EFE0412923D7A27400D47555 /* DiscoverView.swift */,
+				EFE0413223D8BBED00D47555 /* DiscoverTableViewCell.swift */,
+			);
+			path = Discover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,7 +196,11 @@
 			files = (
 				EFE0410C23D63C4500D47555 /* AppDelegate.swift in Sources */,
 				EFE0412023D63CC500D47555 /* GetStartedView.swift in Sources */,
+				EFE0412A23D7A27400D47555 /* DiscoverView.swift in Sources */,
+				EFE0412823D7A10D00D47555 /* TabBarController.swift in Sources */,
 				EFE0410E23D63C4500D47555 /* SceneDelegate.swift in Sources */,
+				EFE0413323D8BBED00D47555 /* DiscoverTableViewCell.swift in Sources */,
+				EFE0412E23D7A3DC00D47555 /* AppearanceHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

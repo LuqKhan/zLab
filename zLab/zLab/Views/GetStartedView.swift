@@ -43,7 +43,7 @@ class GetStartedView: UIViewController {
         //setup Apple sign-in button
         let appleButton = ASAuthorizationAppleIDButton()
         //TODO: The target for the button method is in the Presenter
-        //appleButton.addTarget(self, action: #selector(didTapAppleButton), for: .touchUpInside)
+       //appleButton.addTarget(self, action: #selector(didTapAppleButton), for: .touchUpInside)
         view.addSubview(appleButton)
         appleButton.translatesAutoresizingMaskIntoConstraints = false
         appleButton.translatesAutoresizingMaskIntoConstraints = false
@@ -51,6 +51,5 @@ class GetStartedView: UIViewController {
         appleButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10).isActive = true
         appleButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10).isActive = true
         appleButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        
     }
 }
