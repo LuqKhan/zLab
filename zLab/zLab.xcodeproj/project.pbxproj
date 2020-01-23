@@ -16,6 +16,8 @@
 		EFE0412A23D7A27400D47555 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0412923D7A27400D47555 /* DiscoverView.swift */; };
 		EFE0412E23D7A3DC00D47555 /* AppearanceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0412D23D7A3DC00D47555 /* AppearanceHelper.swift */; };
 		EFE0413323D8BBED00D47555 /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0413223D8BBED00D47555 /* DiscoverTableViewCell.swift */; };
+		EFE0413523D8C10F00D47555 /* DiscoverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0413423D8C10F00D47555 /* DiscoverCollectionViewCell.swift */; };
+		EFE0413723D8EAC700D47555 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0413623D8EAC700D47555 /* VideoPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		EFE0412923D7A27400D47555 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		EFE0412D23D7A3DC00D47555 /* AppearanceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceHelper.swift; sourceTree = "<group>"; };
 		EFE0413223D8BBED00D47555 /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
+		EFE0413423D8C10F00D47555 /* DiscoverCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCollectionViewCell.swift; sourceTree = "<group>"; };
+		EFE0413623D8EAC700D47555 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				EFE0412D23D7A3DC00D47555 /* AppearanceHelper.swift */,
+				EFE0413623D8EAC700D47555 /* VideoPlayerView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -119,9 +124,18 @@
 			isa = PBXGroup;
 			children = (
 				EFE0412923D7A27400D47555 /* DiscoverView.swift */,
-				EFE0413223D8BBED00D47555 /* DiscoverTableViewCell.swift */,
+				EFE0413823DA266000D47555 /* Cells */,
 			);
 			path = Discover;
+			sourceTree = "<group>";
+		};
+		EFE0413823DA266000D47555 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EFE0413423D8C10F00D47555 /* DiscoverCollectionViewCell.swift */,
+				EFE0413223D8BBED00D47555 /* DiscoverTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,8 +210,10 @@
 			files = (
 				EFE0410C23D63C4500D47555 /* AppDelegate.swift in Sources */,
 				EFE0412023D63CC500D47555 /* GetStartedView.swift in Sources */,
+				EFE0413523D8C10F00D47555 /* DiscoverCollectionViewCell.swift in Sources */,
 				EFE0412A23D7A27400D47555 /* DiscoverView.swift in Sources */,
 				EFE0412823D7A10D00D47555 /* TabBarController.swift in Sources */,
+				EFE0413723D8EAC700D47555 /* VideoPlayerView.swift in Sources */,
 				EFE0410E23D63C4500D47555 /* SceneDelegate.swift in Sources */,
 				EFE0413323D8BBED00D47555 /* DiscoverTableViewCell.swift in Sources */,
 				EFE0412E23D7A3DC00D47555 /* AppearanceHelper.swift in Sources */,
