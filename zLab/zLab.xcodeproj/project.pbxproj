@@ -18,6 +18,8 @@
 		EFE0413323D8BBED00D47555 /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0413223D8BBED00D47555 /* DiscoverTableViewCell.swift */; };
 		EFE0413523D8C10F00D47555 /* DiscoverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0413423D8C10F00D47555 /* DiscoverCollectionViewCell.swift */; };
 		EFE0413723D8EAC700D47555 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0413623D8EAC700D47555 /* VideoPlayerView.swift */; };
+		EFE0415B23DB87A900D47555 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0415A23DB87A900D47555 /* HomeView.swift */; };
+		EFE0415E23DB92B100D47555 /* StartClassroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0415D23DB92B100D47555 /* StartClassroomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		EFE0413223D8BBED00D47555 /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
 		EFE0413423D8C10F00D47555 /* DiscoverCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCollectionViewCell.swift; sourceTree = "<group>"; };
 		EFE0413623D8EAC700D47555 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		EFE0415A23DB87A900D47555 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EFE0415D23DB92B100D47555 /* StartClassroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartClassroomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +87,10 @@
 		EFE0412123D63CDC00D47555 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EFE0411F23D63CC500D47555 /* GetStartedView.swift */,
+				EFE0413923DA65BA00D47555 /* GetStarted */,
 				EFE0412723D7A10D00D47555 /* TabBarController.swift */,
+				EFE0415F23DB92BF00D47555 /* StartClassroom */,
+				EFE0415C23DB87B100D47555 /* Home */,
 				EFE0413123D8AFD800D47555 /* Discover */,
 			);
 			path = Views;
@@ -136,6 +142,30 @@
 				EFE0413223D8BBED00D47555 /* DiscoverTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		EFE0413923DA65BA00D47555 /* GetStarted */ = {
+			isa = PBXGroup;
+			children = (
+				EFE0411F23D63CC500D47555 /* GetStartedView.swift */,
+			);
+			path = GetStarted;
+			sourceTree = "<group>";
+		};
+		EFE0415C23DB87B100D47555 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EFE0415A23DB87A900D47555 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EFE0415F23DB92BF00D47555 /* StartClassroom */ = {
+			isa = PBXGroup;
+			children = (
+				EFE0415D23DB92B100D47555 /* StartClassroomView.swift */,
+			);
+			path = StartClassroom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +241,8 @@
 				EFE0410C23D63C4500D47555 /* AppDelegate.swift in Sources */,
 				EFE0412023D63CC500D47555 /* GetStartedView.swift in Sources */,
 				EFE0413523D8C10F00D47555 /* DiscoverCollectionViewCell.swift in Sources */,
+				EFE0415E23DB92B100D47555 /* StartClassroomView.swift in Sources */,
+				EFE0415B23DB87A900D47555 /* HomeView.swift in Sources */,
 				EFE0412A23D7A27400D47555 /* DiscoverView.swift in Sources */,
 				EFE0412823D7A10D00D47555 /* TabBarController.swift in Sources */,
 				EFE0413723D8EAC700D47555 /* VideoPlayerView.swift in Sources */,

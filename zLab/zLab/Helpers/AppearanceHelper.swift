@@ -16,7 +16,7 @@ enum AppearanceHelper {
         UITabBar.appearance().tintColor = .black
         UITabBar.appearance().backgroundColor = #colorLiteral(red: 0.6431372549, green: 0.01176470588, blue: 0.4352941176, alpha: 1)
         UITabBar.appearance().barTintColor = #colorLiteral(red: 0.6431372549, green: 0.01176470588, blue: 0.4352941176, alpha: 1)
-        
+        UITabBar.appearance().unselectedItemTintColor = .black
         UINavigationBar.appearance().backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.6196078431, blue: 0.2980392157, alpha: 1)
         UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.9490196078, green: 0.6196078431, blue: 0.2980392157, alpha: 1)
         UINavigationBar.appearance().tintColor = .white

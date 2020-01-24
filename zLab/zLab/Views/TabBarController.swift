@@ -16,11 +16,14 @@ class TabBarController: UITabBarController {
     }
 
     func configureTabBar() {
-        
-        let discoverVC = DiscoverView()
-        discoverVC.tabBarItem.image = UIImage.init(systemName: "lightbulb")
-        discoverVC.tabBarItem.title = "Discover"
-        let tabBars = [discoverVC]
+        let discoverView = DiscoverView()
+        discoverView.tabBarItem.image = UIImage.init(systemName: "lightbulb")
+        discoverView.tabBarItem.title = "Discover"
+        let homeView = HomeView()
+        homeView.tabBarItem.image = UIImage.init(systemName: "house")
+    
+        homeView.tabBarItem.title = "Home"
+        let tabBars = [discoverView, homeView]
         viewControllers = tabBars
     }
     
