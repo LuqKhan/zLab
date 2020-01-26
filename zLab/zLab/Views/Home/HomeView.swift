@@ -13,7 +13,9 @@ class HomeView: UIViewController {
     
     let userNameLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 150, height: 50))
     @objc let startClassRoomButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
-        
+    
+    //TODO: Fix bug where title disappears when coming back to this view from the start classroom view
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -34,7 +36,7 @@ class HomeView: UIViewController {
         userNameLabel.text = "Username"
         
         //start classroom button
-        startClassRoomButton.addTarget(self, action: #selector(getter: startClassRoomButton), for: .touchUpInside)
+        startClassRoomButton.addTarget(self, action: #selector(startClassroomTapped), for: .touchUpInside)
         startClassRoomButton.setTitle("Start Classroom", for: .normal)
         startClassRoomButton.setTitleColor(#colorLiteral(red: 0.01568627451, green: 0.5450980392, blue: 0.6588235294, alpha: 1), for: .normal)
         startClassRoomButton.layer.cornerRadius = 15
@@ -48,7 +50,7 @@ class HomeView: UIViewController {
     }
     
     @objc func startClassroomTapped() {
+        let startClassroomView = StartClassroomView()
+        navigationController?.pushViewController(startClassroomView, animated: true)
     }
-    
-    
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,9 @@
 		EFE0413723D8EAC700D47555 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0413623D8EAC700D47555 /* VideoPlayerView.swift */; };
 		EFE0415B23DB87A900D47555 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0415A23DB87A900D47555 /* HomeView.swift */; };
 		EFE0415E23DB92B100D47555 /* StartClassroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0415D23DB92B100D47555 /* StartClassroomView.swift */; };
+		EFE0416223DCFB3300D47555 /* SkyFloatingLabelTextField in Frameworks */ = {isa = PBXBuildFile; productRef = EFE0416123DCFB3300D47555 /* SkyFloatingLabelTextField */; };
+		EFE0416423DE179300D47555 /* ClassroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0416323DE179300D47555 /* ClassroomView.swift */; };
+		EFE0416723DE17BF00D47555 /* ClassroomStreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0416623DE17BF00D47555 /* ClassroomStreamView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,8 @@
 		EFE0413623D8EAC700D47555 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		EFE0415A23DB87A900D47555 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EFE0415D23DB92B100D47555 /* StartClassroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartClassroomView.swift; sourceTree = "<group>"; };
+		EFE0416323DE179300D47555 /* ClassroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomView.swift; sourceTree = "<group>"; };
+		EFE0416623DE17BF00D47555 /* ClassroomStreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomStreamView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE0416223DCFB3300D47555 /* SkyFloatingLabelTextField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +95,8 @@
 			children = (
 				EFE0413923DA65BA00D47555 /* GetStarted */,
 				EFE0412723D7A10D00D47555 /* TabBarController.swift */,
+				EFE0416823DE17E500D47555 /* ClassroomStreamView */,
+				EFE0416523DE179B00D47555 /* ClassroomView */,
 				EFE0415F23DB92BF00D47555 /* StartClassroom */,
 				EFE0415C23DB87B100D47555 /* Home */,
 				EFE0413123D8AFD800D47555 /* Discover */,
@@ -168,6 +176,22 @@
 			path = StartClassroom;
 			sourceTree = "<group>";
 		};
+		EFE0416523DE179B00D47555 /* ClassroomView */ = {
+			isa = PBXGroup;
+			children = (
+				EFE0416323DE179300D47555 /* ClassroomView.swift */,
+			);
+			path = ClassroomView;
+			sourceTree = "<group>";
+		};
+		EFE0416823DE17E500D47555 /* ClassroomStreamView */ = {
+			isa = PBXGroup;
+			children = (
+				EFE0416623DE17BF00D47555 /* ClassroomStreamView.swift */,
+			);
+			path = ClassroomStreamView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,6 +208,9 @@
 			dependencies = (
 			);
 			name = zLab;
+			packageProductDependencies = (
+				EFE0416123DCFB3300D47555 /* SkyFloatingLabelTextField */,
+			);
 			productName = zLab;
 			productReference = EFE0410823D63C4500D47555 /* zLab.app */;
 			productType = "com.apple.product-type.application";
@@ -212,6 +239,9 @@
 				Base,
 			);
 			mainGroup = EFE040FF23D63C4500D47555;
+			packageReferences = (
+				EFE0416023DCFB3300D47555 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */,
+			);
 			productRefGroup = EFE0410923D63C4500D47555 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -242,10 +272,12 @@
 				EFE0412023D63CC500D47555 /* GetStartedView.swift in Sources */,
 				EFE0413523D8C10F00D47555 /* DiscoverCollectionViewCell.swift in Sources */,
 				EFE0415E23DB92B100D47555 /* StartClassroomView.swift in Sources */,
+				EFE0416723DE17BF00D47555 /* ClassroomStreamView.swift in Sources */,
 				EFE0415B23DB87A900D47555 /* HomeView.swift in Sources */,
 				EFE0412A23D7A27400D47555 /* DiscoverView.swift in Sources */,
 				EFE0412823D7A10D00D47555 /* TabBarController.swift in Sources */,
 				EFE0413723D8EAC700D47555 /* VideoPlayerView.swift in Sources */,
+				EFE0416423DE179300D47555 /* ClassroomView.swift in Sources */,
 				EFE0410E23D63C4500D47555 /* SceneDelegate.swift in Sources */,
 				EFE0413323D8BBED00D47555 /* DiscoverTableViewCell.swift in Sources */,
 				EFE0412E23D7A3DC00D47555 /* AppearanceHelper.swift in Sources */,
@@ -438,6 +470,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EFE0416023DCFB3300D47555 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Skyscanner/SkyFloatingLabelTextField";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EFE0416123DCFB3300D47555 /* SkyFloatingLabelTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFE0416023DCFB3300D47555 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */;
+			productName = SkyFloatingLabelTextField;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EFE0410023D63C4500D47555 /* Project object */;
 }
